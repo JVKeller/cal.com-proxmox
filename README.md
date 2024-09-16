@@ -60,5 +60,12 @@ Add the Values then run:
 ```bash
     yarn dx
 ```
+Set up first user:
+```bash
+    yarn db-studio
+```
+Edit one of the dummy users. I did Owner 1 (ID 16) 
+Encrypt your password with BCrypt https://bcrypt-generator.com/
+
 Log in...
 
