@@ -46,6 +46,12 @@ git clone https://github.com/calcom/cal.com.git
 cd cal.com
 yarn
 ```
+Set up first user:
+```bash
+    yarn db-studio
+```
+Edit one of the dummy users. I did Owner 1 (ID 16) 
+Encrypt your password with BCrypt https://bcrypt-generator.com/
 > Use openssl rand -base64 32 to generate a key and add it under NEXTAUTH_SECRET in the .env file.
     Use openssl rand -base64 32 to generate a key and add it under CALENDSO_ENCRYPTION_KEY in the .env file.    Use openssl rand -base64 32 to generate a key and add it under CALENDSO_ENCRYPTION_KEY in the .env file.
 	
@@ -56,16 +62,10 @@ openssl rand -base64 32
 openssl rand -base64 32
 nano .env
 ```
-Add the Values then run:
+Add the Values then run a test server:
 ```bash
     yarn dx
 ```
-Set up first user:
-```bash
-    yarn db-studio
-```
-Edit one of the dummy users. I did Owner 1 (ID 16) 
-Encrypt your password with BCrypt https://bcrypt-generator.com/
 
 Log in...
 
