@@ -69,3 +69,10 @@ Add the Values then run a test server:
 
 Log in...
 
+Cal.com runs fine using the dev build like this, but if you try to run a production build, it will probably error out.
+```bash
+    yarn
+    yarn build
+```
+
+This is where I gave up and moved back to the Docker Build.
